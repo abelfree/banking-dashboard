@@ -2,7 +2,7 @@
 
 A responsive fintech account dashboard: balance cards across checking, savings, and credit accounts, a spending breakdown chart, a searchable/filterable transaction list, and a transfer form with real client-side validation.
 
-**Live demo:** _add your deployed URL here_
+**Live demo:** https://abel-banking-dashboard.netlify.app
 
 ![Dashboard screenshot](./screenshot.png)
 
