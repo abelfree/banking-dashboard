@@ -1,0 +1,50 @@
+{
+  "accounts": [
+    {
+      "id": "acc-checking",
+      "name": "Everyday Checking",
+      "type": "checking",
+      "accountNumber": "**** 4821",
+      "balance": 8342.17,
+      "currency": "USD"
+    },
+    {
+      "id": "acc-savings",
+      "name": "High-Yield Savings",
+      "type": "savings",
+      "accountNumber": "**** 9037",
+      "balance": 21590.4,
+      "currency": "USD"
+    },
+    {
+      "id": "acc-credit",
+      "name": "Rewards Credit Card",
+      "type": "credit",
+      "accountNumber": "**** 5563",
+      "balance": -742.35,
+      "currency": "USD"
+    }
+  ],
+  "transactions": [
+    { "id": 1, "accountId": "acc-checking", "date": "2026-08-18", "merchant": "Whole Foods Market", "category": "Groceries", "amount": -84.23 },
+    { "id": 2, "accountId": "acc-checking", "date": "2026-08-17", "merchant": "Spotify", "category": "Subscriptions", "amount": -11.99 },
+    { "id": 3, "accountId": "acc-checking", "date": "2026-08-17", "merchant": "Payroll Deposit", "category": "Income", "amount": 3200 },
+    { "id": 4, "accountId": "acc-credit", "date": "2026-08-16", "merchant": "Shell Gas Station", "category": "Transport", "amount": -52.4 },
+    { "id": 5, "accountId": "acc-checking", "date": "2026-08-15", "merchant": "Netflix", "category": "Subscriptions", "amount": -15.49 },
+    { "id": 6, "accountId": "acc-savings", "date": "2026-08-14", "merchant": "Interest Payment", "category": "Income", "amount": 18.62 },
+    { "id": 7, "accountId": "acc-checking", "date": "2026-08-13", "merchant": "Trader Joe's", "category": "Groceries", "amount": -46.1 },
+    { "id": 8, "accountId": "acc-credit", "date": "2026-08-12", "merchant": "Amazon", "category": "Shopping", "amount": -128.99 },
+    { "id": 9, "accountId": "acc-checking", "date": "2026-08-11", "merchant": "Rent Payment", "category": "Housing", "amount": -1450 },
+    { "id": 10, "accountId": "acc-checking", "date": "2026-08-10", "merchant": "Uber", "category": "Transport", "amount": -23.75 },
+    { "id": 11, "accountId": "acc-credit", "date": "2026-08-09", "merchant": "Chipotle", "category": "Dining", "amount": -14.2 },
+    { "id": 12, "accountId": "acc-checking", "date": "2026-08-08", "merchant": "Starbucks", "category": "Dining", "amount": -6.75 },
+    { "id": 13, "accountId": "acc-savings", "date": "2026-08-05", "merchant": "Transfer from Checking", "category": "Transfer", "amount": 500 },
+    { "id": 14, "accountId": "acc-checking", "date": "2026-08-05", "merchant": "Transfer to Savings", "category": "Transfer", "amount": -500 },
+    { "id": 15, "accountId": "acc-checking", "date": "2026-08-03", "merchant": "Electric Company", "category": "Utilities", "amount": -95.4 },
+    { "id": 16, "accountId": "acc-credit", "date": "2026-08-02", "merchant": "Best Buy", "category": "Shopping", "amount": -299.99 },
+    { "id": 17, "accountId": "acc-checking", "date": "2026-08-01", "merchant": "Gym Membership", "category": "Health", "amount": -39.99 },
+    { "id": 18, "accountId": "acc-checking", "date": "2026-07-31", "merchant": "Payroll Deposit", "category": "Income", "amount": 3200 },
+    { "id": 19, "accountId": "acc-checking", "date": "2026-07-29", "merchant": "Trader Joe's", "category": "Groceries", "amount": -58.32 },
+    { "id": 20, "accountId": "acc-credit", "date": "2026-07-27", "merchant": "Delta Airlines", "category": "Travel", "amount": -412.5 }
+  ]
+}
