@@ -21,20 +21,17 @@ A responsive fintech account dashboard: balance cards across checking, savings, 
 - React Hook Form + Zod for form state and schema validation
 - Recharts for the spending chart
 - Axios for API calls
-- [json-server](https://github.com/typicode/json-server) as a mock REST API (`db.json`)
+- [Mock Service Worker](https://mswjs.io/) intercepting requests at the network layer with a real REST API shape (`GET /accounts`, `GET /transactions`, `POST /transactions`, `PATCH /accounts/:id`) — no backend process required, so the deployed static build works exactly like local dev
 
 ## Running locally
 
 ```bash
 npm install
-
-# terminal 1: mock API on http://localhost:4000
-npm run mock-api
-
-# terminal 2: dev server on http://localhost:5173
 npm run dev
 ```
 
 ## What I learned
 
 Building the transfer flow was the most interesting part: it needed to update two resources (the new transaction and both account balances) after a single form submission, while keeping the UI in a clean loading/error state throughout. Structuring data-fetching as small hooks (`useAccounts`, `useTransactions`) with their own `refetch` made it straightforward to re-sync the dashboard after a mutation without over-engineering a global store for a project this size.
+
+I originally wired this up against `json-server` as a separate local process. That's fine for development, but it meant the "live demo" would just be a UI shell with every request failing once deployed — there's no server to deploy alongside a static site. Switching to MSW moved the mock API into the browser itself via a service worker, so the same request/response contract works identically in dev and in the deployed build.
