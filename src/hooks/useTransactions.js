@@ -8,7 +8,7 @@ export function useTransactions() {
   const refetch = useCallback(() => {
     setStatus('loading')
     return api
-      .get('/transactions', { params: { _sort: 'date', _order: 'desc' } })
+      .get('/transactions', { params: { _sort: '-date' } })
       .then((res) => {
         setTransactions(res.data)
         setStatus('success')
